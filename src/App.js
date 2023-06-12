@@ -44,14 +44,9 @@ export default function App() {
       setAllSigned(false);
     }
   },[googleSigned, yandexSigned]);
-  // useEffect(() => {
-  //   if(allSigned){
-  //     handleRecommendations();
-  //   }
-  // },[yandexInfo, googleInfo])
+
   const handleSelectFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
-    // handleRecommendations();
   }
   const handleSelectClick = () => {
     setUploadSelectModalVisible(true);
@@ -90,9 +85,6 @@ export default function App() {
         setToGoogle(true);
         setToYandex(false);
       }
-      // if(!yandex && !google){
-      //
-      // }
       uploadSelectForm.resetFields();
       setUploadSelectModalVisible(false);
     }
