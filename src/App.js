@@ -104,40 +104,6 @@ export default function App() {
     setToYandex(false);
     setToGoogle(false);
   }
-  // const handleRecommendations = () => {
-  //   let google = false;
-  //   let yandex = false;
-  //   if(googleInfo.limit-googleInfo.usage-fileSize<102400){
-  //     google = false;
-  //   }
-  //   else{
-  //     google = true;
-  //   }
-  //   if(yandexInfo.total_space-yandexInfo.used_space-fileSize<102400){
-  //     yandex = false;
-  //   }
-  //   else{
-  //     yandex = true;
-  //   }
-  //   if(yandex && google){
-  //     if(googleInfo.limit-googleInfo.usage-fileSize > yandexInfo.total_space-yandexInfo.used_space-fileSize){
-  //       setRecommendations("Recommended: Google Drive.");
-  //     }
-  //     else{
-  //       setRecommendations("Recommended: Яндекс.Диск.");
-  //     }
-  //   }
-  //   else if (!yandex && !google){
-  //     setRecommendations("Not enough space in both services. File will not uploaded.");
-  //   }
-  //   else if(!yandex){
-  //     setRecommendations("Only Google Drive has enough space.");
-  //   }
-  //   else if(!google){
-  //     setRecommendations("Only Яндекс.Диск has enough space.");
-  //   }
-  // }
-
   const GoogleSign = () => {
     setToGoogleSign(true);
   }
